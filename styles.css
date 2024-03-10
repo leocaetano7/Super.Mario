@@ -1,22 +1,23 @@
 *{
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
     }
 
+body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
 .gamer-board{
         width: 100%;
-        height: 845px;
-        border: 15px solid rgb(35, 160, 35);
-        margin: 0 auto;
-        position: relative;
+        height: 500px;
+        margin-top: 0 auto;
+        position: static;
         overflow: hidden;
     }
 
 
 .pipe {
     position: absolute;
-    bottom: 0;
+    bottom: 18%;
     width: 80px;
     right: -80px;
     animation: pipe-animation 1.5s infinite linear;
@@ -25,7 +26,7 @@
 .mario{
     width: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: 18%;
 }
 
 .jump{
@@ -59,7 +60,7 @@
 }
 
 .restart-button:hover {
-    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #adb852; /* Altera a cor de fundo ao passar o mouse */
 }
 
 .restart-button:active {
@@ -92,23 +93,23 @@
 
 @keyframes jump {
     0% {
-        bottom: 0;
+        bottom: 180px;
     }
 
     40%{
-        bottom: 180px;
+        bottom: 380px;
     } 
     
     50%{
-        bottom: 180px;
+        bottom: 380px;
     }
 
     60%{
-            bottom: 180px;
+            bottom: 380px;
     }
     
     100%{
-        bottom: 0;
+        bottom: 180px;
     }
 }
 
