@@ -1,0 +1,158 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    
+.gamer-board{
+        width: 100%;
+        height: 1000px;
+        border: 15px solid rgb(35, 160, 35);
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.clouds{
+    position: absolute;
+    width: 550px;
+    animation: clouds-animation 5s infinite linear ;
+}
+
+.restart-button {
+    display: none; /* Inicialmente, o botão estará oculto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Estilos para o botão de restart */
+    background-color: #4CAF50; /* Cor de fundo */
+    border: none;
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.restart-button:hover {
+    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.restart-button:active {
+    background-color: #4CAF50; /* Altera a cor de fundo ao clicar */
+}
+
+
+.back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed; /* Fixa a imagem de fundo à janela do navegador */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 118.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: background-animation 2s linear infinite; /* Ajuste a duração conforme necessário */
+
+}
+
+.Background {    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed; /* Fixa a imagem de fundo à janela do navegador */
+    top: 0;
+ right: 0;
+    width: 100%;
+    height: 118.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: background-animation 5s linear infinite; /* Ajuste a duração conforme necessário */
+    left: calc(50% - 50vw); /* Calcula a posição inicial do centro da imagem, subtraindo metade da largura da janela do navegador */
+    width: 200vw; 
+}
+
+.game-over * {
+    animation-play-state: paused !important;
+}
+
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40%{
+        bottom: 180px;
+    } 
+    
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+            bottom: 180px;
+    }
+    
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    
+    to{
+        right: 100%;
+    }
+    }
+
+@keyframes clouds-animation {
+        from {
+            right: 0%;
+        }
+        
+        to {
+            right: 100%;
+        }
+    }
+
+@keyframes background-animation {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
