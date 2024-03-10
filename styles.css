@@ -17,7 +17,7 @@ body {
 
 .pipe {
     position: absolute;
-    bottom: 13%;
+    bottom: 25%;
     width: 80px;
     right: -80px;
     animation: pipe-animation 1.5s infinite linear;
@@ -26,7 +26,7 @@ body {
 .mario{
     width: 150px;
     position: absolute;
-    bottom: 13%;
+    bottom: 25%;
 }
 
 .jump{
