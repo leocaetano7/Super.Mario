@@ -4,7 +4,7 @@
     }
 
 body {
-        overflow-x: hidden; /* Impede a rolagem horizontal */
+        overflow-x: hidden; 
     }
 .gamer-board{
         width: 100%;
@@ -40,31 +40,31 @@ body {
 }
 
 .restart-button {
-    display: none; /* Inicialmente, o botão estará oculto */
+    display: none; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     /* Estilos para o botão de restart */
-    background-color: #4CAF50; /* Cor de fundo */
+    background-color: #4CAF50; 
     border: none;
-    color: white; /* Cor do texto */
-    padding: 12px 12px; /* Espaçamento interno */
+    color: white; 
+    padding: 12px 12px; 
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 10px; /* Borda arredondada */
+    border-radius: 10px;
 }
 
 .restart-button:hover {
-    background-color: #adb852; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #adb852; 
 }
 
 .restart-button:active {
-    background-color: #4CAF50; /* Altera a cor de fundo ao clicar */
+    background-color: #4CAF50;
 }
 
 
