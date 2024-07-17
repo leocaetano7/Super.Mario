@@ -73,7 +73,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: fixed; /* Fixa a imagem de fundo à janela do navegador */
+    position: fixed; 
     top: 0;
     right: 0;
     width: 100%;
@@ -81,8 +81,8 @@ body {
     display: flex;  
     justify-content: center;
     align-items: center;
-    animation: background-animation 5s linear infinite; /* Ajuste a duração conforme necessário */
-    left: calc(50% - 50vw); /* Calcula a posição inicial do centro da imagem, subtraindo metade da largura da janela do navegador */
+    animation: background-animation 5s linear infinite; 
+    left: calc(50% - 50vw); 
     width: 200vw; 
 }
 
